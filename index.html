@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacked!</title>
+</head>
+<body style="background-color: black; color: lime; font-family: 'Courier New', monospace; text-align: center; overflow: hidden;">
+
+    <h1 style="font-size: 90px; margin-top: 50px; text-shadow: 0 0 30px red; animation: glitch 1.5s infinite;">
+        SYSTEM HACKED!
+    </h1>
+    <p style="font-size: 35px; color: red; animation: fadeText 3s infinite;">All your data in my control</p>
+    <p style="font-size: 35px; color: red; animation: fadeText 3s infinite;"><i><abbr>by iksan</abbr>: <b>"halo bang TIO"</b></i></p>
+    <p style="margin-top: 50px; font-size: 30px; color: lime; animation: fadeText 2.5s infinite;">hacker berhasil masuk...</p>
+    <div id="loading" style="color: red; font-size: 40px; margin-top: 30px;">
+        <span>█</span><span>█</span><span>█</span><span>█</span><span>█</span><span>█</span><span>█</span><span>█</span>
+    </div>
+
+    <p id="message" style="margin-top: 10px; color: red; display: none; font-size: 50px; animation: flashText 1.5s infinite;">ERROR: Perangkat telah di ambil alih!...</p>
+
+    <div id="skull" style="font-size: 250px; color: red; display: none; text-shadow: 0 0 30px lime;">
+        c:\Users\WIN10\Downloads\sancademy.jpg
+    </div>
+
+    <div id="blood" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('https://i.imgur.com/AXaJuV5.png') no-repeat center center fixed; background-size: cover; display: none; opacity: 0.8;"></div>
+
+    <script>
+        // Animasi loading bar lebih lambat
+        setInterval(function() {
+            var loading = document.getElementById('loading');
+            loading.innerHTML += '<span>█</span>';
+            if (loading.innerHTML.length > 20) {
+                loading.innerHTML = '<span>█</span><span>█</span><span>█</span><span>█</span><span>█</span>';
+            }
+        }, 400); // Lebih lambat
+
+        // Munculkan pesan setelah 2 detik
+        setTimeout(function() {
+            document.getElementById('message').style.display = 'block';
+        }, 6000);
+
+        // Munculkan tengkorak setelah 6 detik
+        setTimeout(function() {
+            document.getElementById('skull').style.display = 'block';
+        }, 8000);
+
+        // Munculkan darah dan efek horor setelah 10 detik
+        setTimeout(function() {
+            document.getElementById('blood').style.display = 'block';
+        }, 10000);
+
+    </script>
+
+    <style>
+        @keyframes glitch {
+            0% {
+                text-shadow: 2px 2px red, -2px -2px lime;
+            }
+            50% {
+                text-shadow: -3px -3px red, 3px 3px lime;
+            }
+            100% {
+                text-shadow: 2px 2px red, -2px -2px lime;
+            }
+        }
+
+        @keyframes fadeText {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.4;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes flashText {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+
+</body>
+</html>
