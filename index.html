@@ -1,1 +1,179 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imam Iksan Bilnazari - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9fafb;
+            color: #333;
+        }
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .profile {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 12px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .profile h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        .profile p {
+            font-size: 1rem;
+            margin: 10px 0 0;
+            color: #555;
+        }
+        section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #1f2937;
+        }
+        .skills, .character {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .tag {
+            background-color: #e5e7eb;
+            border-radius: 16px;
+            padding: 5px 15px;
+            font-size: 0.9rem;
+            color: #1f2937;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #1f2937;
+            color: white;
+            font-size: 0.8rem;
+            margin-top: 40px;
+        }
+        .btn-home {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #1f2937;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-home::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.3);
+            opacity: 0;
+            transition: opacity 0.3s, transform 0.3s;
+            transform: scale(0.8);
+            border-radius: 8px;
+        }
+        .btn-home:hover::after {
+            opacity: 1;
+            transform: scale(1);
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 0 10px;
+            }
+            .profile img {
+                width: 120px;
+                height: 120px;
+            }
+            .profile h2 {
+                font-size: 1.5rem;
+            }
+            section h2 {
+                font-size: 1.2rem;
+            }
+            .btn-home {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome</h1>
+    </header>
+    <main>
+        <div class="profile">
+            <img src="d:\bahan editing\iksan pp.jpg" alt="Imam Iksan Bilnazari">
+            <h2>Imam Iksan Bilnazari</h2>
+            <p>Mahasiswa | Pengembang Teknologi | leader</p>
+        </div>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Nama saya Imam Iksan Bilnazari, mahasiswa semester 2 jurusan Sistem Teknologi Informasi di Institut Teknologi Sawit Indonesia Medan. Saya memiliki minat besar pada pengembangan teknologi, khususnya dalam bidang data analysis dan programming.</p>
+            <p>Pengalaman saya meliputi berbagai tanggung jawab kepemimpinan, termasuk menjabat sebagai ketua asrama selama 2 tahun, bendahara selama 3 tahun, dan ketua kelas selama 1 tahun. Saya juga aktif berorganisasi di OSIS dengan peran penting sebagai bagian rohis selama 1 tahun dan bagian bahasa selama 1 tahun.</p>
+            <p>Selain itu, saya aktif dalam organisasi mahasiswa seperti HMI, PMII, dan majelis ilmu di desa. Pengalaman ini membantu saya mengembangkan keterampilan komunikasi, manajemen tim, dan leadership yang kuat. Saya juga telah memenangkan lomba dai dengan tema kemerdekaan, membawakan pidato bahasa Inggris di acara perpisahan, dan memiliki pengalaman mengajar ngaji selama 7 bulan.</p>
+        </section>
+        <section id="skills">
+            <h2>Keahlian Utama</h2>
+            <div class="skills">
+                <span class="tag">Video editing dan desain grafis</span>
+                <span class="tag">Public speaking</span>
+                <span class="tag">Microsoft Office (Word, Excel, PPT)</span>
+                <span class="tag">Leadership dan manajemen tim</span>
+            </div>
+        </section>
+        <section id="character">
+            <h2>Karakter Pribadi</h2>
+            <div class="character">
+                <span class="tag">Pekerja keras</span>
+                <span class="tag">Kreatif</span>
+                <span class="tag">Inovatif</span>
+                <span class="tag">Bersahabat</span>
+                <span class="tag">Cepat tanggap</span>
+            </div>
+        </section>
+        <section id="vision">
+            <h2>Visi</h2>
+            <p>Mengembangkan solusi berbasis teknologi untuk mempermudah kehidupan sehari-hari.</p>
+            <a href="#" class="btn-home">Back to Home</a>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Imam Iksan Bilnazari. All rights reserved | follow @iksan.bnz
+    </footer>
+</body>
+</html>
+
